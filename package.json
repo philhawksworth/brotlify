@@ -1,0 +1,14 @@
+{
+  "name": "brotlify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cp src/* dist/"
+  },
+  "author": "Phil Hawksworth <phil@netlify.com>",
+  "license": "ISC",
+  "dependencies": {
+    "netlify-plugin-minify-html": "^0.2.2"
+  }
+}

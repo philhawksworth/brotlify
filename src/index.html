@@ -1,0 +1,112 @@
+<!--
+
+  Dear Netlifyers,
+
+  ARE YOU NOT ENTERTAINED?!?!
+  Please can this small token help to put that
+  whole Petlify debacle behind us? Please!
+
+  Love and hugs,
+  The Hawk
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brotlify - Brotli support comes to Netlify</title>
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@philhawksworth" />
+  <meta name="twitter:creator" content="@philhawksworth" />
+  <meta property="og:url" content="https://brotlify.netlify.app/" />
+  <meta property="og:title" content="Brotlify" />
+  <meta property="og:description" content="Brotli support comes to Netlify. But people wanted to press a button to turn it on. Click away, friends!" />
+  <meta property="og:image" content="https://brotlify.netlify.app/og.png" />
+  <style>
+
+    body {
+      text-align: center;
+      font-family:Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background-color: #eff3f4;
+    }
+
+    main {
+      padding-top: 3rem;
+      width: 80%;
+      max-width: 450px;
+      margin:auto;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .message {
+      font-size: 1.5rem;
+    }
+
+    a:link,
+    a:visited {
+      color: #02c7c4;
+    }
+
+    a.button:link,
+    a.button:visited {
+      margin: auto;
+      width: 200px;
+      height: 165px;
+      display: inline-block;
+      background: bottom url('./button.svg') no-repeat;
+      background-size:100%;
+    }
+    a.button:active {
+      background:bottom url('./button_down.svg') no-repeat;
+      background-size:100%;
+    }
+    .point {
+      font-size: 6rem;
+      padding:0;
+      margin:0;
+    }
+    .credit {
+      margin-top: 2rem;
+      font-size: 0.7rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Brotlify</h1>
+    <p>
+      Push this big red button if you want to enable brotli compression on the <a href="https://netlify.com/edge?utm_source=brotlify&utm_medium=brotli-pnh&utm_campaign=devex">Netlify CDN</a> for your website.
+    </p>
+    <p class="point">👇</p>
+    <a href="https://www.netlify.com/blog/2020/05/20/gain-instant-performance-boosts-as-brotli-comes-to-netlify-edge/?utm_source=brotlify&utm_medium=brotli-pnh&utm_campaign=devex" class="button">
+    </a>
+    <div class="message">
+      🎉 It's done! 🎉<br/>
+      <a href="https://www.netlify.com/blog/2020/05/20/gain-instant-performance-boosts-as-brotli-comes-to-netlify-edge/?utm_source=brotlify&utm_medium=brotli-pnh&utm_campaign=devex">Read all about it.</a>
+
+      <p class="credit">
+        Big clicky button made by <a href="https://twitter.com/philhawksworth">@philhawksworth.</a>, all the clever stuff to do with actually bringing brotli support to the Netlify CDN by the <a href="https://netlify.com/?utm_source=brotlify&utm_medium=brotli-pnh&utm_campaign=devex">clever Netlify boffins</a> and very much not Phil.
+      </p>
+    </div>
+  </main>
+
+  <script>
+    const msg = document.querySelector('.message');
+    const btn = document.querySelector('.button');
+    const img = new Image();
+    img.src = "./button_down.svg";
+    msg.classList.add('hidden');
+    btn.addEventListener('click', function(event) {
+      event.preventDefault();
+      msg.classList.remove('hidden');
+    }, false);
+  </script>
+</body>
+</html>
