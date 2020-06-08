@@ -11,6 +11,6 @@
   "author": "Phil Hawksworth <phil@netlify.com>",
   "license": "ISC",
   "dependencies": {
-    "netlify-plugin-minify-html": "^0.2.2"
+    "netlify-plugin-minify-html": "^0.2.3"
   }
 }
